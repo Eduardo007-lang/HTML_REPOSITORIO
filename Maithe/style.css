@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(255, 182, 193);
+    
+}
+
+div#image_top {
+
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+p#parag_1 {
+
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+div.item_text {
+    width: 250px;
+    height: 250px;
+    word-wrap: break-word;
+    background-color: rgb(253,215,228);
+}
+
+.list_image_p img {
+
+    max-width: 150px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
