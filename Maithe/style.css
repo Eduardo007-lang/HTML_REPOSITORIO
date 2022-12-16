@@ -18,6 +18,12 @@ p#parag_1 {
     padding-top: 20px;
 }
 
+div.container {
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around;
+}
+
 div.item_text {
     width: 250px;
     height: 250px;
