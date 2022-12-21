@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+
+p {
+    color: red;
+}
+
+.center {
+    background-color: yellow;
+    color: red;
+    text-align: center;
+}
+
+.center2 {
+    text-align: center;
+    background-color: blue;
+    color: white;
+
+}
+.center3 {
+    font-size: 80px;
+}
+
+#param2 {
+    color: black;
+}
+
+div.center {
+    background-color: red;
+}
+
+
