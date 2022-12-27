@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GN | 01</title>
+</head>
+<style>
+    body {
+
+background-color: cornflowerblue;
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+
+}
+.box-nav {
+background-color: gold;
+padding: 0.312em;
+border-radius: 0.9em;
+
+}
+
+.box {
+
+background-color: rgba(0, 0, 0, 0.6);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 0.9em;
+border-radius: 0.9em; 
+color: white;
+
+
+}
+
+input {
+padding: 0.625em;
+border: none;
+outline: none;
+border-radius: 0.625em;
+font-size: 0.9em;
+width: 55%;
+}
+
+button{
+padding: 0.625em;
+border: none;
+outline: none;
+width: 50%;
+background-color: slateblue;
+color: white;
+border-radius: 0.625em;
+cursor: pointer;
+transition: 0.5s;
+}
+
+button:hover{
+background-color: cornflowerblue;
+}
+
+.box p {
+
+font-size: 1.2em;
+}
+
+</style>
+<body>
+    <div class="box-nav">
+        <h1>EXERCICIO #01</h1>
+        <h2>JavaScript</h2>
+    </div>
+
+    <div class="box">
+        <p>Leia o valor do input e mostre um alerta!</p>
+        <input type="text" id="txt1" placeholder="Digite um valor"><br>
+        <br><br>
+        <button id="send">Enviar</button>
+    </div>
+
+    <script>
+        let go = function(){
+            var valueInput = document.getElementById("txt1").value;
+            alert(valueInput); 
+        };
+
+        send.addEventListener("click", go);
+        
+    </script>
+</body>
+
