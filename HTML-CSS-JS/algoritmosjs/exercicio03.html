@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GN | 03</title>
+</head>
+<style>
+    body {
+
+background-color: cornflowerblue;
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+
+}
+.box-nav {
+background-color: gold;
+padding: 0.312em;
+border-radius: 0.9em;
+
+}
+
+.box {
+
+background-color: rgba(0, 0, 0, 0.6);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 0.9em;
+border-radius: 0.9em; 
+color: white;
+
+
+}
+
+input {
+padding: 0.625em;
+border: none;
+outline: none;
+border-radius: 0.625em;
+font-size: 0.9em;
+width: 55%;
+}
+
+button{
+padding: 0.625em;
+border: none;
+outline: none;
+width: 50%;
+background-color: slateblue;
+color: white;
+border-radius: 0.625em;
+cursor: pointer;
+transition: 0.5s;
+}
+
+button:hover{
+background-color: cornflowerblue;
+}
+
+.box p {
+
+font-size: 1.2em;
+}
+
+</style>
+<body>
+    <div class="box-nav">
+        <h1>EXERCICIO #03</h1>
+        <h2>JavaScript</h2>
+    </div>
+
+    <div class="box">
+        <p> Leia as idades de duas crianças. Após, calcular e mostrar a soma das idades e a média.</p>
+        <input type="text" id="txt1" placeholder="Idade da Primeira Crianca">
+        <br><br>
+        <input type="text" id="txt2" placeholder="Idade da Segunda Crianca">
+        <br><br>
+        <button id="send">Enviar</button>
+    </div>
+
+    <script>
+        let media_idade = function(){
+
+            
+
+            var idade_1 = parseInt(document.querySelector("#txt1").value);
+            var idade_2 = parseInt(document.querySelector("#txt2").value);
+           
+            let media = (idade_1 + idade_2) / 2;
+
+            alert(`Idade da Primeira crianca: ${idade_1} \n Idade da Segunda crianca: ${idade_2} \n Media Idade: ${media}`);
+
+            
+        };
+
+        send.addEventListener("click", media_idade);
+        
+    </script>
+</body>
+

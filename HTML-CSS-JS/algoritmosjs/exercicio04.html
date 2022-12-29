@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GN | 03</title>
+</head>
+<style>
+    body {
+
+background-color: cornflowerblue;
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+
+}
+.box-nav {
+background-color: gold;
+padding: 0.312em;
+border-radius: 0.9em;
+
+}
+
+.box {
+
+background-color: rgba(0, 0, 0, 0.6);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 0.9em;
+border-radius: 0.9em; 
+color: white;
+
+
+}
+
+.num {
+padding: 0.625em;
+border: none;
+outline: none;
+border-radius: 0.625em;
+font-size: 0.9em;
+width: 55%;
+}
+
+button{
+padding: 0.625em;
+border: none;
+outline: none;
+width: 50%;
+background-color: slateblue;
+color: white;
+border-radius: 0.625em;
+cursor: pointer;
+transition: 0.5s;
+}
+
+button:hover{
+background-color: cornflowerblue;
+}
+
+.box p {
+
+font-size: 1.2em;
+}
+
+</style>
+<body>
+    <div class="box-nav">
+        <h1>EXERCICIO #03</h1>
+        <h2>JavaScript</h2>
+    </div>
+
+    <div class="box">
+        <p>Questão: Leia 2 números. Efetue as 4 operações matemáticas e mostre os resultados.</p>
+        <input type="text" class="num" id="text1" placeholder="Insira um valor">
+        <br><br>
+        <input type="text" class="num" id="text2" placeholder="Insira outro valor">
+        <br><br>
+        <label for="adicao"><input type="radio" id="adicao" name="operation" value="adicao">Adicao</label>
+        <br><br>
+        <label for="subtracao"><input type="radio" id="subtracao" name="operation" value="subtracao">Subtracao</label>
+        <br><br>
+        <label for="multiplicacao"><input type="radio" id="multiplicacao" name="operation" value="multiplicacao">Multiplicacao</label>
+        <br><br>
+        <label for="divisao"><input type="radio" id="divisao" name="operation" value="divisao">Divisao</label>
+        <br><br>
+        <button id="send">Enviar</button>
+    </div>
+
+    <script>
+
+        let calc = function(){
+
+                let var1 = Number(document.querySelector("#text1").value);
+                let var2 = Number(document.querySelector("#text2").value);
+                let selectOperation = document.querySelector('input[name="operation"]:checked').value;
+                let nameOperation, calculo;
+                
+                if (selectOperation == 'adicao'){
+
+                    nameOperation = 'Adicao';
+
+                    calculo = var1 + var2;
+
+                }else if(selectOperation == 'subtracao'){
+
+                    nameOperation = 'Subtracao';
+
+                    calculo = var1 - var2;
+
+
+                }else if(selectOperation == 'multiplicacao'){
+
+                    nameOperation = 'Multiplicacao';
+
+                    calculo = var1 * var2;
+                  }else {
+                    nameOperation = 'Divisiao';
+
+                    calculo = var1 / var2;
+                  }
+
+
+                  alert(`${nameOperation}: ${calculo}`);
+
+                };
+
+        send.addEventListener("click", calc);
+
+    </script>
+</body>
+
