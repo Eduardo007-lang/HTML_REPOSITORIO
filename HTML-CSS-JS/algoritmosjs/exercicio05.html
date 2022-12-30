@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GN | 05</title>
+</head>
+<style>
+    body {
+
+background-color: cornflowerblue;
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+
+}
+.box-nav {
+background-color: gold;
+padding: 0.312em;
+border-radius: 0.9em;
+
+}
+
+.box {
+
+background-color: rgba(0, 0, 0, 0.6);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 0.9em;
+border-radius: 0.9em; 
+color: white;
+
+
+}
+
+.num {
+padding: 0.625em;
+border: none;
+outline: none;
+border-radius: 0.625em;
+font-size: 0.9em;
+width: 55%;
+}
+
+button{
+padding: 0.625em;
+border: none;
+outline: none;
+width: 50%;
+background-color: slateblue;
+color: white;
+border-radius: 0.625em;
+cursor: pointer;
+transition: 0.5s;
+}
+
+button:hover{
+background-color: cornflowerblue;
+}
+
+.box p {
+
+font-size: 1.2em;
+}
+
+</style>
+<body>
+    <div class="box-nav">
+        <h1>EXERCICIO #05</h1>
+        <h2>JavaScript</h2>
+    </div>
+
+    <div class="box">
+        <p>Questão: Leia uma temperatura em graus Celcius. Apos, Calcular e mostrar a mesma temperatura em graus Fahrenheit.</p>
+        <input type="text" class="num" id="text1" placeholder="Insira um valor em graus Celcius">
+        <br><br>
+        <button id="send">Enviar</button>
+    </div>
+
+    <script>
+
+        let cel_fah= function(){
+
+                let varCel = Number(document.querySelector(`#text1`).value);
+                let result  = varCel * 1.8 + 32;
+                
+                alert(`Resultado em Graus Fahrenheit: ${result}°F`);
+                 
+        };
+
+           
+
+        send.addEventListener('click', cel_fah);
+
+    </script>
+</body>
+
